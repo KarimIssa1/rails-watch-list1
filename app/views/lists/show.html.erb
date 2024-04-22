@@ -1,6 +1,6 @@
 <div class="container mt-3">
   <% if @list.image.attached? %>
-    <%= image_tag url_for(@list.image), class: "list-image" %>
+    <%= cl_image_tag @list.image, class: "list-image" %>
   <% end %>
 
   <h1><%= @list.name %></h1>
